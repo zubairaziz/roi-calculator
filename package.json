@@ -1,0 +1,80 @@
+{
+  "name": "magnaguard-calculator",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "calculator, magnaguard",
+  "license": "",
+  "author": "",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": "core-js@3"
+        }
+      ]
+    ]
+  },
+  "browserslist": [
+    "> 0.5%",
+    "not op_mini all",
+    "not ie 11",
+    "not ie 10"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "ignorePatterns": [
+      "node_modules"
+    ],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "no-console": 1,
+      "indent": ["warn", 2],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "semi": false,
+          "indent": ["warn", 2]
+        }
+      ]
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "core-js": "^3.6.5",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^8.0.5",
+    "postcss-import": "^12.0.1",
+    "postcss-modules": "^3.2.2",
+    "prettier": "^2.1.2",
+    "tailwindcss": "^1.8.10"
+  }
+}
