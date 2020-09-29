@@ -1,6 +1,6 @@
 # ROI Calculator
 
-Simple ROI Calculator (Revenue & Profit) built with Vanilla JS & Tailwind, compiled with Parcel
+Simple ROI Calculator (Revenue & Profit) built with Vanilla JS & Tailwind, bundled with Parcel
 
 ## Development
 ```sh
@@ -9,7 +9,7 @@ yarn install
 yarn dev
 ```
 
-## Buiild
+## Build
 ```sh
 nvm use
 yarn install
