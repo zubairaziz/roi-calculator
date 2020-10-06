@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en-US">
 
 <head>
   <meta charset="utf-8">
@@ -24,14 +24,14 @@
 <body class="w-screen min-h-screen bg-gray-100">
   <div class="container">
     <h1 class="text-primary-dark text-center text-3xl md:text-5xl pt-4 mb-6 md:pt-6 md:mb-8">
-      ROI Calculator
+      Magna-Guard Oil Filter Magnets
     </h1>
   </div>
-  <div class="p-4 md:p-8 grid min-h-full grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 place-content-center mx-auto"
-    style="max-width: 1080px;">
+  <div class="p-4 md:p-8 grid grid-cols-1 min-h-full place-content-center mx-auto" style="max-width: 1080px;">
     <!-- Profit Calculator -->
-    <form action="" class="bg-white border border-primary-light border-solid rounded-lg p-4 md:p-6">
-      <h2 class="text-primary text-2xl mb-4 md:mb-6">Profit Calculator</h2>
+    <form action="" class="relative bg-white border border-primary-light border-solid rounded-lg p-4 md:p-6">
+      <h2 class="text-primary text-2xl mb-4 md:mb-6">ROI Calculator</h2>
+      <!-- <button type="reset" class="absolute top-0 right-0 button button-secondary">Reset</button> -->
       <div class="relative input mt-4 range flex flex-col">
         <label for="DailyRepairOrders">Daily Repair Orders</label>
         <div class="relative input-holder inline-flex w-full">
@@ -46,7 +46,8 @@
         </div>
       </div>
       <div class="relative input mt-4 range flex flex-col">
-        <label for="ClosingRatio">Closing Ratio</label>
+        <label for="ClosingRatio">Closing Ratio <br><small class="text-xs leading-none">65% Avg.
+            Projected</small></label>
         <div class="relative input-holder inline-flex w-full">
           <input class="w-10/12 p-2" type="range" name="ClosingRatio" id="ClosingRatio" step="1" min="30" max="85"
             value="65">
@@ -59,12 +60,13 @@
         </div>
       </div>
       <div class="relative input mt-4 text flex flex-col">
-        <label for="CostPerMagnet">Cost Per Magnet</label>
+        <label for="CostPerMagnet">Your Cost Per Magnet</label>
         <input class="bg-transparent text-primary p-2" type="text" name="CostPerMagnet" id="CostPerMagnet" value="$4.00"
           disabled>
       </div>
       <div class="relative input mt-4 range flex flex-col">
-        <label for="ResaleOfMagnets">Resale Of Magnets</label>
+        <label for="ResaleOfMagnets">Consumer Cost Per Magnet <br><small class="text-xs leading-none">$19.95 Recommended
+            Resale Cost</small></label>
         <div class="relative input-holder inline-flex w-full">
           <input class="w-10/12 p-2" type="range" name="ResaleOfMagnets" id="ResaleOfMagnets" step="0.5" min="14.95"
             max="24.95" value="19.95">
@@ -91,7 +93,7 @@
     </form>
 
     <!-- Revenue Calculator -->
-    <form action="" class="bg-white border border-primary-light border-solid rounded-lg p-4 md:p-6">
+    <!-- <form action="" class="bg-white border border-primary-light border-solid rounded-lg p-4 md:p-6">
       <h2 class="text-primary text-2xl mb-4 md:mb-6">Cost & Revenue Calculator</h2>
       <div class="relative input mt-4 range flex flex-col">
         <label for="RevenueDailyRepairOrders">Daily Repair Orders</label>
@@ -154,7 +156,7 @@
             id="AdditionalAnnualRevenue">0</output>
         </div>
       </div>
-    </form>
+    </form> -->
 
   </div>
   <script src="js/plugins.js"></script>
