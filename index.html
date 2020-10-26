@@ -21,32 +21,30 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="w-screen min-h-screen bg-gray-100">
+<body class="w-screen min-h-screen bg-accent">
   <div class="container">
-    <h1 class="text-primary-dark text-center text-3xl md:text-5xl pt-4 mb-6 md:pt-6 md:mb-8">
+    <h1 class="pt-4 mb-6 text-3xl text-center text-gray-700 md:text-5xl md:pt-6 md:mb-8">
       Magna-Guard Oil Filter Magnets
     </h1>
   </div>
-  <div class="p-4 md:p-8 grid grid-cols-1 min-h-full place-content-center mx-auto" style="max-width: 840px;">
+  <div class="grid min-h-full grid-cols-1 p-4 mx-auto md:p-8 place-content-center" style="max-width: 840px;">
     <!-- Profit Calculator -->
-    <form action="" class="relative bg-white border border-primary-light border-solid rounded-lg p-4 md:p-6">
-      <h2 class="text-primary text-2xl mb-4 md:mb-6">ROI Calculator</h2>
-      <input type="reset"
-        class="cursor-pointer transform -translate-x-1 translate-y-1 absolute top-0 right-0 block transition-colors duration-300 bg-primary hover:bg-primary-darker leading-none text-white px-4 py-3 rounded">Reset</input>
-      <div class="relative input mt-4 range flex flex-col">
+    <form action="" class="relative p-4 bg-white border border-gray-500 border-solid rounded-sm md:p-6">
+      <h2 class="mb-4 text-2xl text-primary md:mb-6">ROI Calculator</h2>
+      <div class="relative flex flex-col mt-4 input range">
         <label for="DailyRepairOrders">Daily Repair Orders</label>
-        <div class="relative input-holder inline-flex w-full">
+        <div class="relative inline-flex w-full input-holder">
           <input class="w-10/12 p-2" type="range" name="DailyRepairOrders" id="DailyRepairOrders" step="1" min="5"
             max="500" value="50">
-          <div class="flex justify-between absolute text-gray-800 text-sm bottom-0 left-0 -mb-2 w-10/12">
+          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 -mb-2 text-sm text-gray-700">
             <div>5</div>
             <div>500</div>
           </div>
-          <output id="DailyRepairOrdersOutput" class="w-2/12 grid place-content-center text-primary text-lg"
+          <output id="DailyRepairOrdersOutput" class="grid w-2/12 text-lg place-content-center text-primary"
             for="DailyRepairOrders">0</output>
         </div>
       </div>
-      <div class="relative input mt-4 range flex flex-col">
+      <div class="relative flex flex-col mt-4 input range">
         <label for="ClosingRatio">Closing Ratio <br>
           <p class="text-sm">
             <small class="leading-none">
@@ -54,23 +52,23 @@
             </small>
           </p>
         </label>
-        <div class="relative input-holder inline-flex w-full">
+        <div class="relative inline-flex w-full input-holder">
           <input class="w-10/12 p-2" type="range" name="ClosingRatio" id="ClosingRatio" step="1" min="30" max="85"
             value="65">
-          <div class="flex justify-between absolute text-gray-800 text-sm bottom-0 left-0 -mb-2 w-10/12">
+          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 -mb-2 text-sm text-gray-700">
             <div>30%</div>
             <div>85%</div>
           </div>
-          <output id="ClosingRatioOutput" class="w-2/12 grid place-content-center text-primary text-lg"
+          <output id="ClosingRatioOutput" class="grid w-2/12 text-lg place-content-center text-primary"
             for="ClosingRatio">0</output>
         </div>
       </div>
-      <div class="relative input mt-4 text flex flex-col">
+      <div class="relative flex flex-col mt-4 input text">
         <label for="CostPerMagnet">Your Cost Per Magnet</label>
-        <input class="bg-transparent text-primary p-2" type="text" name="CostPerMagnet" id="CostPerMagnet" value="$4.00"
+        <input class="p-2 bg-transparent text-primary" type="text" name="CostPerMagnet" id="CostPerMagnet" value="$4.00"
           disabled>
       </div>
-      <div class="relative input mt-4 range flex flex-col">
+      <div class="relative flex flex-col mt-4 input range">
         <label for="ResaleOfMagnets">Consumer Cost Per Magnet <br>
           <p class="text-sm">
             <small class="leading-none">
@@ -78,97 +76,35 @@
             </small>
           </p>
         </label>
-        <div class="relative input-holder inline-flex w-full">
+        <div class="relative inline-flex w-full input-holder">
           <input class="w-10/12 p-2" type="range" name="ResaleOfMagnets" id="ResaleOfMagnets" step="0.5" min="14.95"
             max="24.95" value="19.95">
-          <div class="flex justify-between absolute text-gray-800 text-sm bottom-0 left-0 -mb-2 w-10/12">
+          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 -mb-2 text-sm text-gray-700">
             <div>$14.95</div>
             <div>$24.95</div>
           </div>
-          <output id="ResaleOfMagnetsOutput" class="w-2/12 grid place-content-center text-primary text-lg"
+          <output id="ResaleOfMagnetsOutput" class="grid w-2/12 text-lg place-content-center text-primary"
             for="ResaleOfMagnets">0</output>
         </div>
       </div>
-      <div class="results mt-6 md:mt-8">
-        <div class="output text-center">
+      <div class="mt-6 results md:mt-8">
+        <div class="text-center output">
           <label for="AdditionalMonthlyProfit">Additional Monthly Profit</label>
-          <output class="block text-secondary-dark mb-2 text-lg md:text-xl" name="AdditionalMonthlyProfit"
+          <output class="block mb-2 text-lg text-gray-700 md:text-xl" name="AdditionalMonthlyProfit"
             id="AdditionalMonthlyProfit">0</output>
         </div>
-        <div class="output text-center">
+        <div class="text-center output">
           <label for="AdditionalAnnualProfit">Additional Annual Profit</label>
-          <output class="block text-secondary-dark mb-2 text-lg md:text-xl" name="AdditionalAnnualProfit"
+          <output class="block mb-2 text-lg text-gray-700 md:text-xl" name="AdditionalAnnualProfit"
             id="AdditionalAnnualProfit">0</output>
         </div>
       </div>
+      <div class="grid place-content-center">
+        <input type="reset"
+          class="block px-5 py-3 leading-none text-white transition-colors duration-300 transform -translate-x-1 translate-y-1 rounded-full cursor-pointer bg-primary hover:bg-gray-700">
+        </input>
+      </div>
     </form>
-
-    <!-- Revenue Calculator -->
-    <!-- <form action="" class="bg-white border border-primary-light border-solid rounded-lg p-4 md:p-6">
-      <h2 class="text-primary text-2xl mb-4 md:mb-6">Cost & Revenue Calculator</h2>
-      <div class="relative input mt-4 range flex flex-col">
-        <label for="RevenueDailyRepairOrders">Daily Repair Orders</label>
-        <div class="relative input-holder inline-flex w-full">
-          <input class="w-10/12 p-2" type="range" name="RevenueDailyRepairOrders" id="RevenueDailyRepairOrders" step="1"
-            min="5" max="500" value="50">
-          <div class="flex justify-between absolute text-gray-800 text-sm bottom-0 left-0 -mb-2 w-10/12">
-            <div>5</div>
-            <div>500</div>
-          </div>
-          <output id="RevenueDailyRepairOrdersOutput" class="w-2/12 grid place-content-center text-primary text-lg"
-            for="RevenueDailyRepairOrders">0</output>
-        </div>
-      </div>
-      <div class="relative input mt-4 range flex flex-col">
-        <label for="RevenueClosingRatio">Closing Ratio</label>
-        <div class="relative input-holder inline-flex w-full">
-          <input class="w-10/12 p-2" type="range" name="RevenueClosingRatio" id="RevenueClosingRatio" step="1" min="30"
-            max="85" value="65">
-          <div class="flex justify-between absolute text-gray-800 text-sm bottom-0 left-0 -mb-2 w-10/12">
-            <div>30%</div>
-            <div>85%</div>
-          </div>
-          <output id="RevenueClosingRatioOutput" class="w-2/12 grid place-content-center text-primary text-lg"
-            for="RevenueClosingRatio">0</output>
-        </div>
-      </div>
-      <div class="relative input mt-4 text flex flex-col">
-        <label for="RevenueCostPerMagnet">Cost Per Magnet</label>
-        <input class="bg-transparent text-primary p-2" type="text" name="RevenueCostPerMagnet" id="RevenueCostPerMagnet"
-          value="$4.00" disabled>
-      </div>
-      <div class="relative input mt-4 range flex flex-col">
-        <label for="RevenueResaleOfMagnets">Resale Of Magnets</label>
-        <div class="relative input-holder inline-flex w-full">
-          <input class="w-10/12 p-2" type="range" name="RevenueResaleOfMagnets" id="RevenueResaleOfMagnets" step="0.5"
-            min="14.95" max="24.95" value="19.95">
-          <div class="flex justify-between absolute text-gray-800 text-sm bottom-0 left-0 -mb-2 w-10/12">
-            <div>$14.95</div>
-            <div>$24.95</div>
-          </div>
-          <output id="RevenueResaleOfMagnetsOutput" class="w-2/12 grid place-content-center text-primary text-lg"
-            for="RevenueResaleOfMagnets">0</output>
-        </div>
-      </div>
-      <div class="results mt-6 md:mt-8">
-        <div class="output text-center">
-          <label for="AdditionalMonthlyCost">Additional Monthly Cost</label>
-          <output class="block text-primary-dark mb-2 text-lg md:text-xl" name="AdditionalMonthlyCost"
-            id="AdditionalMonthlyCost">0</output>
-        </div>
-        <div class="output text-center">
-          <label for="AdditionalMonthlyRevenue">Additional Monthly Revenue</label>
-          <output class="block text-secondary-dark mb-2 text-lg md:text-xl" name="AdditionalMonthlyRevenue"
-            id="AdditionalMonthlyRevenue">0</output>
-        </div>
-        <div class="output text-center">
-          <label for="AdditionalAnnualRevenue">Additional Annual Revenue</label>
-          <output class="block text-secondary-dark mb-2 text-lg md:text-xl" name="AdditionalAnnualRevenue"
-            id="AdditionalAnnualRevenue">0</output>
-        </div>
-      </div>
-    </form> -->
-
   </div>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

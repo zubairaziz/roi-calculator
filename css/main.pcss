@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply text-gray-900;
+}
+
 input[type=range] {
   -webkit-appearance: none;
   margin: 10px 0;
@@ -15,7 +19,7 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 12.8px;
   cursor: pointer;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  @apply bg-primary-lighter;
+  @apply bg-primary-lightest;
   border-radius: 25px;
   border: 0px solid #000101;
 }
@@ -31,7 +35,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -3.6px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  @apply bg-primary-lighter;
+  @apply bg-primary-lightest;
 }
 input[type=range]::-moz-range-track {
   width: 100%;
@@ -39,7 +43,7 @@ input[type=range]::-moz-range-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  @apply bg-primary-lighter;
+  @apply bg-primary-lightest;
   border-radius: 25px;
   border: 0px solid #000101;
 }
@@ -63,13 +67,13 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-  @apply bg-primary-lighter;
+  @apply bg-primary-lightest;
   border: 0px solid #000101;
   border-radius: 50px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 input[type=range]::-ms-fill-upper {
-  @apply bg-primary-lighter;
+  @apply bg-primary-lightest;
   border: 0px solid #000101;
   border-radius: 50px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
@@ -84,8 +88,8 @@ input[type=range]::-ms-thumb {
   cursor: pointer;
 }
 input[type=range]:focus::-ms-fill-lower {
-  @apply bg-primary-lighter;
+  @apply bg-primary-lightest;
 }
 input[type=range]:focus::-ms-fill-upper {
-  @apply bg-primary-lighter;
+  @apply bg-primary-lightest;
 }
