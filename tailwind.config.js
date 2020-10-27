@@ -4,12 +4,24 @@ module.exports = {
   prefix: '',
   important: false,
   separator: ':',
-  purge: [
-    './index.html',
-    './*.html',
-    './**/*.html',
-    './**/*.js'
-  ],
+  purge: {
+    content: [
+      './index.html',
+      './*.html',
+      './**/*.html',
+      './**/*.js'
+    ],
+    options: {
+      whitelist: [
+        'noUi-target',
+        'noUi-background',
+        'noUi-vertical',
+        'noUi-connect',
+        'noUi-handle',
+        'noUi-active',
+      ]
+    }
+  },
   theme: {
     fontSize: {
       xxs: '10px',
