@@ -23,7 +23,7 @@
 
 <body class="w-screen min-h-screen bg-white">
   <div class="container">
-    <h1 class="pt-4 mb-1 text-3xl font-medium text-center text-primary md:text-4xl md:pt-6 md:mb-2">
+    <h1 class="hidden pt-4 mb-1 text-3xl font-medium text-center sm:block text-primary md:text-4xl md:pt-6 md:mb-2">
       ROI Calculator
     </h1>
   </div>
@@ -35,7 +35,7 @@
         <div class="relative inline-flex w-full input-holder">
           <input class="w-10/12 p-2 outline-none focus:outline-none" style="box-shadow:none;" type="range" name="DailyRepairOrders" id="DailyRepairOrders" step="1" min="5"
             max="500" value="50" data-start="50">
-          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 -mb-2 text-sm text-gray-700">
+          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 ml-2 -mb-2 text-sm text-gray-700">
             <div>5</div>
             <div>500</div>
           </div>
@@ -54,7 +54,7 @@
         <div class="relative inline-flex w-full input-holder">
           <input class="w-10/12 p-2 outline-none focus:outline-none" style="box-shadow:none;" type="range" name="ClosingRatio" id="ClosingRatio" step="1" min="30" max="85"
             value="65" data-start="65">
-          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 -mb-2 text-sm text-gray-700">
+          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 ml-2 -mb-2 text-sm text-gray-700">
             <div>30%</div>
             <div>85%</div>
           </div>
@@ -78,7 +78,7 @@
         <div class="relative inline-flex w-full input-holder">
           <input class="w-10/12 p-2 outline-none focus:outline-none" style="box-shadow:none;" type="range" name="ResaleOfMagnets" id="ResaleOfMagnets" step="0.5" min="14.95"
             max="24.95" value="19.95" data-start="19.95">
-          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 -mb-2 text-sm text-gray-700">
+          <div class="absolute bottom-0 left-0 flex justify-between w-10/12 ml-2 -mb-2 text-sm text-gray-700">
             <div>$14.95</div>
             <div>$24.95</div>
           </div>
@@ -98,10 +98,17 @@
             id="AdditionalAnnualProfit">0</output>
         </div>
       </div>
-      <div class="grid place-content-center">
+      <div class="flex place-content-center">
         <input type="reset"
           class="block px-5 py-3 leading-none text-white transition-colors duration-300 transform -translate-x-1 translate-y-1 rounded-full cursor-pointer bg-primary hover:bg-gray-700">
         </input>
+        <div class="block w-4 h-4 bg-transparent">
+          &nbsp;
+        </div>
+        <a href="https://www.buymagnaguard.com/product/standard-oil-filter-magnets/"
+          class="block px-5 py-3 leading-none text-white transition-colors duration-300 transform -translate-x-1 translate-y-1 rounded-full cursor-pointer bg-primary hover:bg-gray-700">
+            Buy Now
+        </a>
       </div>
     </form>
   </div>
